@@ -4,10 +4,429 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
+    <style>
+        *{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        #backimg{
+            width: 640px;
+            height: 840px;
+            margin: 0 auto;
+            background-image: url(IMG_6640.PNG);
+            background-size: contain;
+            margin-top: -110px;
+        }
+        #backimg h2{
+            text-align: center;
+            color: green;
+            font-size: 8rem;
+            position: relative;
+            padding: 7% 3%;
+        }
+        #nametag{
+            width: 640px;
+            height: 840px;
+            margin-top: -120px;
+        }
+        #nametag h3, #nametag p{
+            filter: drop-shadow(0 0 5px rgb(0,0,0));
+        } 
+        #nametag p{
+            font-weight: bold;
+        }
+        #nametag .name1{
+            width: 320px;
+            height: 210px;
+            float: left;
+            margin-top: 50px;
+            text-align: left;
+        }
+        #nametag .name1 a:hover h3, #nametag .name1 a:hover p{
+            transition: all 0.5s;
+            transform: scale(140%);
+            color:cornflowerblue;
+            filter:drop-shadow(0 0 5px rgb(0 0 0));
+            padding-left: 30px;
+            margin-left: 30px;
+            padding-top: 10px;
+        }
+        #nametag .name1 a h3{
+            height: 15px;
+            font-size: 2rem;
+            margin-left: 20px;
+            text-shadow: 1px;
+        }
+        #nametag .name1 p{
+            font-size: 1rem;
+            padding-left: 20px;
+            color: aliceblue;
+        }
+        #nametag .name1 a:hover .inwoogagu{
+            transform: translateY(100px);
+            transition: all 1s;
+            opacity: 100%;
+        }
+        .inwoogagu{
+            transform: translateY(1000px);
+            transition-property: transform;
+            transition: all 10s;
+            transition-duration: 0.5s;
+            transition-delay: 0.1s;
+            transition-timing-function: ease-in;
+            opacity: 0%;
+        }
+        #nametag .name2 a:hover .inwoogagu{
+            transform: translateY(200px);
+            transition: all 1s;
+            opacity: 100%;
+        }
+        
+        .bluegagu1{
+            position: absolute;
+            margin-left: -150px;
+        }
+        .bluegagu1 img, .bluegagu3 img, .bluegagu4 img, .bluegagu5 img{
+            width: 200px;
+        }
+        .bluegagu2{
+            position: absolute;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+        .bluegagu2 img{
+            width: 500px;
+        }
+        .bluegagu3{
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 150px;
+        }
+        .bluegagu4{
+            position: absolute;
+            margin-left: 220px;
+            margin-top: 180px;
+        }
+        .bluegagu5{
+            position: absolute;
+            margin-left: 590px;
+            width: 400px;
+            margin-top: 120px;
+        }
+
+
+
+        #nametag .name2 a:hover .bjwgagu{
+            transform: translateY(200px);
+            transition: all 1s;
+            opacity: 100%;
+        }
+        .bjwgagu1{
+            position: absolute;
+            margin-left: -600px;
+            margin-top: -50px;
+            z-index: 9;
+        }
+        .bjwgagu1 img{
+            width: 300px;
+        }
+        .bjwgagu3 img, .bjwgagu5 img{
+            width: 300px;
+        }
+        .bjwgagu2{
+            position: absolute;
+            margin-left: -400px;
+            margin-top: -10px;
+            z-index: 7;
+        }
+        .bjwgagu2 img{
+            width: 300px;
+        }
+        .bjwgagu3{
+            position: absolute;
+            margin-left: 130px;
+            margin-top: 125px;
+            z-index: 12;
+        }
+        .bjwgagu4{
+            position: absolute;
+            margin-left: -220px;
+            margin-top: 10px;
+            z-index: 10;
+        }
+        .bjwgagu4 img{
+            width: 450px;
+        }
+        .bjwgagu5{
+            position: absolute;
+            margin-left: 200px;
+            width: 400px;
+            margin-top: -60px;
+            z-index: 10;
+        }
+        .bjwgagu{
+            transform: translateY(1000px);
+            transition-property: transform;
+            transition: all 10s;
+            transition-duration: 0.5s;
+            transition-delay: 0.1s;
+            transition-timing-function: ease-in;
+            opacity: 0%;
+        }
+
+
+
+
+        #nametag .name3 a:hover .kjhgagu{
+            transform: translateY(-30px);
+            transition: all 1s;
+            opacity: 100%;
+        }
+        .kjhgagu1{
+            position: absolute;
+            margin-left: -180px;
+            margin-top: -130px;
+            z-index: 9;
+        }
+        .kjhgagu1 img, .kjhgagu3 img, .kjhgagu4 img, .kjhgagu5 img{
+            width: 200px;
+        }
+        .kjhgagu2{
+            position: absolute;
+            margin-left: 250px;
+            margin-top: 100px;
+        }
+        .kjhgagu2 img{
+            width: 500px;
+        }
+        .kjhgagu3{
+            position: absolute;
+            margin-left: 0px;
+            margin-top: 165px;
+            z-index: 10;
+        }
+        .kjhgagu4{
+            position: absolute;
+            margin-left: 120px;
+            margin-top: 50px;
+        }
+        .kjhgagu5{
+            position: absolute;
+            margin-left: 600px;
+            width: 400px;
+            margin-top: -90px;
+            z-index: 10;
+        }
+        .kjhgagu{
+            transform: translateY(1000px);
+            transition-property: transform;
+            transition: all 10s;
+            transition-duration: 0.5s;
+            transition-delay: 0.1s;
+            transition-timing-function: ease-in;
+            opacity: 0%;
+        }
+
+
+
+
+         #nametag .name4 a:hover .iijgagu{
+            transform: translateY(-30px);
+            transition: all 1s;
+            opacity: 100%;
+        }
+        #nametag .name4 a:hover p, #nametag .name4 a:hover h3{
+            transition: all 0.5s;
+            transform: scale(140%);
+            color:brown;
+            filter:drop-shadow(0 0 20px rgb(255 255 255));
+            padding-right: 30px;
+            margin-right: 30px;
+            padding-top: 10px;
+        }
+        .iijgagu1{
+            position: absolute;
+            margin-left: -600px;
+            margin-top: 60px;
+            z-index: 9;
+        }
+        .iijgagu1 img{
+            width: 280px;
+        }
+        .iijgagu2{
+            position: absolute;
+            margin-left: 180px;
+            margin-top: 10px;
+            z-index: 10;
+        }
+        .iijgagu2 img{
+            width: 400px;
+        }
+        .iijgagu3{
+            position: absolute;
+            margin-left: -370px;
+            margin-top: 55px;
+            z-index: 10;
+        }
+        .iijgagu3 img{
+            width: 180px;
+        }
+        .iijgagu4{
+            position: absolute;
+            margin-left: -250px;
+            margin-top: 50px;
+        }
+        .iijgagu4 img{
+            width: 500px;
+        }
+        .iijgagu{
+            transform: translateY(1000px);
+            transition-property: transform;
+            transition: all 10s;
+            transition-duration: 0.5s;
+            transition-delay: 0.1s;
+            transition-timing-function: ease-in;
+            opacity: 0%;
+        }
+
+
+
+
+        #nametag .name2{
+            width: 320px;
+            height: 210px;
+            float: left;
+            margin-top: 50px;
+            text-align: right;
+        }
+        #nametag .name2 h3{
+            height: 15px;
+            font-size: 2rem;
+            margin-right: 20px;
+            color: aliceblue;
+        }
+        #nametag .name2 p{
+            font-size: 1rem;
+            padding-right: 20px;
+            color: aliceblue;
+            padding-top: 40px;
+        }
+        #nametag .name2 a:hover h3, #nametag .name2 a:hover p{
+            transition: all 0.5s;
+            transform: scale(140%);
+            color:rosybrown;
+            filter:drop-shadow(0 0 20px rgb(0 0 0));
+            padding-right: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+        }
+
+
+        #nametag .name3{
+            width: 320px;
+            height: 210px;
+            float: left;
+            text-align: left;
+        }
+        #nametag .name3 h3{
+            height: 15px;
+            font-size: 2rem;
+            margin-left: 20px;
+            color: aliceblue;
+            z-index: 99;
+        }
+        #nametag .name3 p{
+            font-size: 1rem;
+            padding-left: 20px;
+            color: aliceblue;
+        }
+        #nametag .name3 a:hover h3, #nametag .name3 a:hover p{
+            transition: all 0.5s;
+            transform: scale(140%);
+            color:green;
+            filter:drop-shadow(0 0 5px rgb(255 255 255));
+            z-index: 99;
+            padding-left: 30px;
+            margin-left: 30px;
+            padding-top: 10px;
+        }
+
+        #nametag .name4{
+            width: 320px;
+            height: 210px;
+            float: left;
+            text-align: right;
+        }
+        #nametag .name4 h3{
+            height: 15px;
+            font-size: 2rem;
+            margin-right: 20px;
+            color: aliceblue;
+        }
+        #nametag .name4 p{
+            font-size: 1rem;
+            padding-right: 20px;
+            color: aliceblue;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>test</h1>
-    <img src="bg.jpg">
-    <a href="today1.html">link</a>
+    <div id="backimg">
+        <h2>INTERIOR</h2>
+    <div id="nametag">
+        <div class="name1">
+        <a href="">
+        <h3>New Blue Wave</h3>
+        <p>22557012 김인우</p>
+        <div class="inwoogagu">
+            <div class="bluegagu1"><img src="img2/blue1.png" alt=""></div>
+            <div class="bluegagu2"><img src="img2/blue2.png" alt=""></div>
+            <div class="bluegagu3"><img src="img2/blue3.png" alt=""></div>
+            <div class="bluegagu4"><img src="img2/blue4.png" alt=""></div>
+            <div class="bluegagu5"><img src="img2/blue5.png" alt=""></div>
+        </div>
+        </a>
+        </div>
+        <div class="name2">
+            <a href="https://baegjinu.github.io/baeagjinu/#top">
+        <h3>FURNITURE & GARDENING</h3>
+        <p>22557026 백진우</p>
+        <div class="bjwgagu">
+            <div class="bjwgagu1"><img src="bjw/bjw1.png" alt=""></div>
+            <div class="bjwgagu2"><img src="bjw/bjw2.png" alt=""></div>
+            <div class="bjwgagu3"><img src="bjw/bjw3.png" alt=""></div>
+            <div class="bjwgagu4"><img src="bjw/bjw4.png" alt=""></div>
+            <div class="bjwgagu5"><img src="bjw/bjw5.png" alt=""></div>
+        </div>
+        </a>
+        </div>
+        <div class="name3">
+            <a href="">
+        <h3>Green and Dining</h3>
+        <p>22557014 김지현</p>
+        <div class="kjhgagu">
+            <div class="kjhgagu1"><img src="gjh/kjh2.png" alt=""></div>
+            <div class="kjhgagu2"><img src="gjh/kjh3.png" alt=""></div>
+            <div class="kjhgagu3"><img src="gjh/kjh1.png" alt=""></div>
+            <div class="kjhgagu4"><img src="gjh/kjh4.png" alt=""></div>
+            <div class="kjhgagu5"><img src="gjh/kjh5.png" alt=""></div>
+        </div>
+        </a>
+        </div>
+        <div class="name4">
+            <a href="">
+        <h3>Old and Now</h3>
+        <p>22557050 임이지</p>
+        <div class="iijgagu">
+            <div class="iijgagu1"><img src="iij/iij1.png" alt=""></div>
+            <div class="iijgagu2"><img src="iij/iij2.png" alt=""></div>
+            <div class="iijgagu3"><img src="iij/iij3.png" alt=""></div>
+            <div class="iijgagu4"><img src="iij/iij4.png" alt=""></div>
+        </div>
+        </a>
+        </div>
+    </div>
+    </div>
 </body>
 </html>
