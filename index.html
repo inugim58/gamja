@@ -2,8 +2,8 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mainpage</title>
+    <script src="js/jquery-1.12.3.js"></script>
     <style>
         *{
             text-decoration: none;
@@ -15,19 +15,19 @@
             margin: 0 auto;
             background-image: url(IMG_6640.PNG);
             background-size: contain;
-            margin-top: -110px;
+            margin-top: -50px;
         }
-        #backimg h2{
-            text-align: center;
+        #backimg > img{
             color: green;
-            font-size: 8rem;
             position: relative;
-            padding: 7% 3%;
+            width: 600px;
+            padding-top: 60px;
+            padding-left: 20px;
         }
         #nametag{
             width: 640px;
             height: 840px;
-            margin-top: -120px;
+            margin-top: 20px;
         }
         #nametag h3, #nametag p{
             filter: drop-shadow(0 0 5px rgb(0,0,0));
@@ -369,16 +369,66 @@
             color: aliceblue;
         }
 
+
+
+.garim{
+    width: 2000%;
+    height: 2000%;
+    z-index: 1;
+    position: absolute;
+    background-color:#333;
+    margin-top: -300%;
+    margin-left: -300%;
+    opacity: 30%;
+}
+.pop{
+    width: 465px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #333;
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+.pop h3{
+    padding: 10px;
+    margin-top: 0px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    color: #ffffff;
+    background-color: #333;
+    z-index: 10;
+}
+.pop p{
+    padding: 25px;
+    text-align: justify;
+    color: #000;
+    z-index: 10;
+    background-color: white;
+}
+.pop button {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,-50%);
+    color: #000;
+    z-index: 10;
+}
+
     </style>
 </head>
 <body>
     <div id="backimg">
-        <h2>INTERIOR</h2>
+        <img src="mainlogo.png" alt="logo">
     <div id="nametag">
         <div class="name1">
         <a href="https://inugim58.github.io/pppcoding/">
         <h3>New Blue Wave</h3>
-        <p>22557012 김인우</p>
+        <p>지중해 푸른 물결을 닮은 감각적인 공간</p>
         <div class="inwoogagu">
             <div class="bluegagu1"><img src="img2/blue1.png" alt=""></div>
             <div class="bluegagu2"><img src="img2/blue2.png" alt=""></div>
@@ -391,7 +441,7 @@
         <div class="name2">
             <a href="https://baegjinu.github.io/baeagjinu/#top">
         <h3>FURNITURE & GARDENING</h3>
-        <p>22557026 백진우</p>
+        <p>자연을 품은 집, 정원과 가구가 만나다</p>
         <div class="bjwgagu">
             <div class="bjwgagu1"><img src="bjw/bjw1.png" alt=""></div>
             <div class="bjwgagu2"><img src="bjw/bjw2.png" alt=""></div>
@@ -402,9 +452,9 @@
         </a>
         </div>
         <div class="name3">
-            <a href="">
+            <a href="https://kimjihyun22557014.github.io/index.html/">
         <h3>Green and Dining</h3>
-        <p>22557014 김지현</p>
+        <p>식탁 위에 피어난 초록의 미학</p>
         <div class="kjhgagu">
             <div class="kjhgagu1"><img src="gjh/kjh2.png" alt=""></div>
             <div class="kjhgagu2"><img src="gjh/kjh3.png" alt=""></div>
@@ -415,9 +465,9 @@
         </a>
         </div>
         <div class="name4">
-            <a href="">
+            <a href="https://lazyylim.github.io/OL/#contact">
         <h3>Old and Now</h3>
-        <p>22557050 임이지</p>
+        <p>과거와 현재, 그 사이의 아름다움</p>
         <div class="iijgagu">
             <div class="iijgagu1"><img src="iij/iij1.png" alt=""></div>
             <div class="iijgagu2"><img src="iij/iij2.png" alt=""></div>
@@ -428,5 +478,16 @@
         </div>
     </div>
     </div>
+    <div class="pop">
+        <h3>INTERIOR Website by</h3>
+        <p>메인 페이지 + New blue wave ............................ 22557012 김인우<br>
+           FURNITURE & GARDENING .............................. 22557026 백진우<br>
+           Green and Dining ................................................. 22557014 김지현<br>
+           Old and Now ........................................................ 22557050 임이지
+  </p>
+  <button onclick="closePop()">확인</button>
+  <div class="garim"></div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
