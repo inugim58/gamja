@@ -21,7 +21,7 @@
             background-size: contain;
             margin-top: -50px;
         }
-        #backimg > img{
+        .titlelogo > img{
             color: green;
             position: relative;
             width: 600px;
@@ -386,6 +386,7 @@
     opacity: 30%;
 }
 .pop{
+    display: none;
     width: 465px;
     height: 300px;
     background-color: rgb(255, 255, 255);
@@ -427,7 +428,9 @@
 </head>
 <body>
     <div id="backimg">
-        <img src="mainlogo.png" alt="logo">
+        <div class="titlelogo">
+        <img src="mainlogo.png" alt="logo" onclick="openPop()">
+        </div>
     <div id="nametag">
         <div class="name1">
         <a href="https://inugim58.github.io/pppcoding/">
@@ -443,7 +446,7 @@
         </a>
         </div>
         <div class="name2">
-            <a href="https://baegjinu.github.io/22557026-code/">
+            <a href="https://baegjinu.github.io/baeagjinu/#top">
         <h3>FURNITURE & GARDENING</h3>
         <p>자연을 품은 집, 정원과 가구가 만나다</p>
         <div class="bjwgagu">
